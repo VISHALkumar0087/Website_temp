@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRANSFORMERS</title>
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+    /* Navigation bar styling */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #2ee600;
+      padding: 10px;
+    }
+    .navbar a {
+      color: rgb(255, 255, 255);
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #005bb5;
+      border-radius: 4px;
+    }
+    /* Page content styling */
+    .container {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    h1 {
+      text-align: center;
+      color: #0073e6;
+    }
+    /* Parts section styling */
+    .parts-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .part-item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: #fafafa;
+    }
+    .part-image {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .part-details {
+      flex: 1;
+    }
+    .part-name {
+      font-size: 19px;
+      font-weight: bold;
+      color: #41e600;
+    }
+    .part-info {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <a href="#" onclick="showTab('home')">Home</a>
+    <a href="#" onclick="showTab('profile')">Profile</a>
+    <a href="#" onclick="showTab('parts')">Parts</a>
+    <a href="#" onclick="showTab('calculator')">Calculator</a>
+  </div>
+  <div id="home" class="container active">
+    <h1> SpeedMods</h1>
+    <h>We calculate the car and costomize it</h>
+    <h2>Previous Project's</h2>
+    <div class="gallery">
+      <img src="thar.jfif" alt="Car 1">
+      <img src="rolls.jfif" alt="Car 2">
+      <img src="supra.jfif" alt="Car 3">
+      <img src="g wagon.jfif" alt="Car 4">
+      <img src="porshe.jfif" alt="Car 5">
+      <img src="lambo.jpg" alt="Car 6">
+    </div>
+  </div>
+
+  <!-- Profile tab content -->
+  <div id="profile" class="container">
+    <h1>Your Profile</h1>
+    <img src="TURBO.webp" alt="Turbocharger Kit" class="part-image">
+    <img src="EXHAUST.webp" alt="Sports Exhaust System" class="part-image">
+    <img src="BODY.jfif" alt="Body Kit" class="part-image">
+    <p>calculate the power of your car using modcalcu</p>
+  </div>
+
+  <!-- Parts tab content -->
+  <div id="parts" class="container">
+    <h1>Modification Parts</h1>
+    <ul class="parts-list">
+      <li class="part-item">
+        <img src="TURBO.webp" alt="Turbocharger Kit" class="part-image">
+        <div class="part-details">
+          <div class="part-name">Turbocharger Kit</div>
+          <div class="part-info">Type: Performance</div>
+          <div class="part-info">Price: $1,500</div>
+          <div class="part-info">Location: SpeedMods, 123 Performance St., New York</div>
+          <p>Boosts engine horsepower significantly, giving a major power upgrade.</p>
+        </div>
+      </li>
+      <li class="part-item">
+        <img src="EXHAUST.webp" alt="Sports Exhaust System" class="part-image">
+        <div class="part-details">
+          <div class="part-name">Sports Exhaust System</div>
+          <div class="part-info">Type: Exhaust</div>
+          <div class="part-info">Price: $800</div>
+          <div class="part-info">Location: PowerExhausts, 456 Turbo Ave., Los Angeles</div>
+          <p>Increases horsepower and provides a louder, more aggressive exhaust sound.</p>
+        </div>
+      </li>
+      <li class="part-item">
+        <img src="COLD.jpg" alt="Cold Air Intake" class="part-image">
+        <div class="part-details">
+          <div class="part-name">Cold Air Intake</div>
+          <div class="part-info">Type: Intake</div>
+          <div class="part-info">Price: $300</div>
+          <div class="part-info">Location: FreshAir, 789 Custom Rd., Chicago</div>
+          <p>Improves air flow to the engine, enhancing power and fuel efficiency.</p>
+        </div>
+      </li>
+      <li class="part-item">
+        <img src="BODY.jfif" alt="Body Kit" class="part-image">
+        <div class="part-details">
+          <div class="part-name">Body Kit</div>
+          <div class="part-info">Type: Aesthetic</div>
+          <div class="part-info">Price: $1,200</div>
+          <div class="part-info">Location: StyleAuto, 101 Design St., Miami</div>
+          <p>Upgrades the car’s look with custom bumpers, skirts, and spoilers.</p>
+        </div>
+      </li>
+      <li class="part-item">
+        <img src="TYRE.png" alt="High-Performance Tires" class="part-image">
+        <div class="part-details">
+          <div class="part-name">High-Performance Tires</div>
+          <div class="part-info">Type: Tires</div>
+          <div class="part-info">Price: $600</div>
+          <div class="part-info">Location: GripWorks, 234 Speed Rd., Dallas</div>
+          <p>Enhances handling, grip, and stability, especially on high-speed turns.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Calculator tab content -->
+  <div id="calculator" class="container">
+    <h1>Car Modification Calculator</h1>
+    <form id="calculator-form">
+      <div class="form-group">
+        <label for="horsepower">Horsepower Increase (HP)</label>
+        <input type="number" id="horsepower" placeholder="e.g., 50">
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight Reduction (kg)</label>
+        <input type="number" id="weight" placeholder="e.g., 20">
+      </div>
+      <button type="button" onclick="calculatePerformance()">Calculate</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.container');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function calculatePerformance() {
+      const horsepowerIncrease = parseFloat(document.getElementById('horsepower').value) || 0;
+      const weightReduction = parseFloat(document.getElementById('weight').value) || 0;
+      let estimatedTopSpeedIncrease = horsepowerIncrease * 0.2;
+      let handlingImprovement = weightReduction * 0.1;
+      document.getElementById('result').innerHTML = `
+        <p>Estimated Top Speed Increase: ${estimatedTopSpeedIncrease.toFixed(1)} km/h</p>
+        <p>Handling Improvement: ${handlingImprovement.toFixed(1)}%</p>
+      `;
+    }
+  </script>
+</body>
+</html>
