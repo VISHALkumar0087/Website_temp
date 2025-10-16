@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+union student {
+     int age;
+    
+
+
+ };
+ 
+ int main (){
+     student v;
+     v.age=9;
+    
+    
+     cout<<"age: "<<v.age<<endl;
+     
+  
+    
+return 0;
+}
+    
