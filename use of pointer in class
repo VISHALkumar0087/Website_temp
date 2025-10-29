@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class student {
+    int age, roll_no;
+
+public:
+    void setValue(int a, int b) {
+        age = a;
+        roll_no = b;
+    }
+
+    void getValue() {
+        cout << age << " " << roll_no << endl;
+    }
+};
+
+int main() {
+    student s;
+    // s.setValue(20, 101);
+   student* ptr = &s;
+(*ptr).setValue(20,101);
+(*ptr).getValue();
+
+    return 0;
+}
