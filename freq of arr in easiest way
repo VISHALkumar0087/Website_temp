@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main (){
+    int n = 7;
+    int arr[7]={1,2,3,2,1,3,4};
+    int freq[5]={0};
+    for(int i=0; i<n;i++) freq [arr[i]]++;
+    int target = 3;
+    cout<<freq[target];
+    return 0;
